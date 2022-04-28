@@ -1,5 +1,7 @@
 pipeline {
      environment {
+       DOCKERHUB_ID = "cjoly69" 
+       DOCKERHUB_PASSWORD = credentials('docker_key')
        IMAGE_NAME = "alpinehelloworld"
        IMAGE_TAG = "latest"
        STAGING = "cjoly69-staging"
